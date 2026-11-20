@@ -1,0 +1,27 @@
+{
+  "name": "pii-deidentifier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rule-based de-identification of emails, phones, SSNs, dates of birth, card numbers, and IPv4 addresses.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/api/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.10",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
